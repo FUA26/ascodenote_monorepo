@@ -1,40 +1,49 @@
-# Turborepo kitchen sink starter
+# ascodenote_monorepo
 
-This Turborepo starter is maintained by the Turborepo core team.
+**Enterprise Level Boilerplate**
 
-This example also shows how to use [Workspace Configurations](https://turborepo.com/docs/core-concepts/monorepos/configuring-workspaces).
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e kitchen-sink
-```
+This is an enterprise-level monorepo boilerplate designed for scalability and maintainability. It utilizes [Turborepo](https://turborepo.com/) for high-performance build system management and [pnpm](https://pnpm.io/) for efficient package management.
 
 ## What's inside?
 
-This Turborepo includes the following packages and apps:
+This repository includes the following applications and shared packages:
 
-### Apps and Packages
+### Applications
 
-- `api`: an [Express](https://expressjs.com/) server
-- `storefront`: a [Next.js](https://nextjs.org/) app
-- `admin`: a [Vite](https://vitejs.dev/) single page app
-- `blog`: a [Remix](https://remix.run/) blog
-- `@repo/eslint-config`: ESLint configurations used throughout the monorepo
-- `@repo/jest-presets`: Jest configurations
-- `@repo/logger`: isomorphic logger (a small wrapper around console.log)
-- `@repo/ui`: a dummy React UI library (which contains `<CounterButton>` and `<Link>` components)
-- `@repo/typescript-config`: tsconfig.json's used throughout the monorepo
+- **express**: An [Express](https://expressjs.com/) backend server.
+- **nestjs**: A [NestJS](https://nestjs.com/) backend application.
+- **nextjs**: A [Next.js](https://nextjs.org/) frontend application (Storefront).
+- **vite**: A [Vite](https://vitejs.dev/) Single Page Application (Admin Dashboard).
+- **remix**: A [Remix](https://remix.run/) application (Blog).
 
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Shared Packages
 
-### Utilities
+- `@repo/ui`: A shared React UI library.
+- `@repo/logger`: Isomorphic logger utility.
+- `@repo/eslint-config`: Shared ESLint configurations.
+- `@repo/jest-presets`: Shared Jest configurations.
+- `@repo/typescript-config`: Shared TypeScript configurations.
 
-This Turborepo has some additional tools already setup for you:
+## Getting Started
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Jest](https://jestjs.io) test runner for all things JavaScript
-- [Prettier](https://prettier.io) for code formatting
+To get started with development:
+
+1.  **Install dependencies:**
+
+    ```sh
+    pnpm install
+    ```
+
+2.  **Run development server:**
+    ```sh
+    pnpm run dev
+    ```
+
+For detailed development workflows (commits, versioning, quality checks), please refer to [docs/development.md](docs/development.md).
+
+## Utilities
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking.
+- [ESLint](https://eslint.org/) for code linting.
+- [Jest](https://jestjs.io) for testing.
+- [Prettier](https://prettier.io) for code formatting.
